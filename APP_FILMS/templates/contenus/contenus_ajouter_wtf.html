@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %} Ajouter un contenu (WTF) {% endblock %}
+{% block body %}
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<p>
+				Ajouter du nouveau contenu
+			</p>
+			<form action="" method="POST" >
+				<!-- Protection contre les attaques Cross-Site Request Forgery (CSRF) -->
+				<div class="form-group">
+					<label for="nom_contenu_wtf">Nom du contenu</label>
+					<input name="nom_contenu_wtf" type="text" id='nom_contenu_wtf' style="width:200px;" required pattern="^([A-Z]|[a-zÀ-ÖØ-öø-ÿ])[A-Za-zÀ-ÖØ-öø-ÿ]*['\- ]?[A-Za-zÀ-ÖØ-öø-ÿ]+$" />
+					<label for="nom_nbcontenu_wtf">Nombre du contenu</label>
+					<input name="nom_nbcontenu_wtf" type="number" id='nom_nbcontenu_wtf' style="width:200px;" required />
+					<select id="piece" name="piece" style="height:30px;" required>
+						{% for row in piece%}
+							<option value="{{row.id_piece}}">{{row.Nom_piece}}</option>
+						{% endfor %}
+					</select>
+					<br/>
+					<br/>
+				</div>
+				<br>
+				<button type="submit">Ajouter contenu</button>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
