@@ -12,8 +12,4 @@ Ensuite faite un clic droit sur le fichier qui se trouve à la racine nommé "1_
 
 Si vous n'avez plus d'erreur cliqué sur le lien qui se trouve dans la console ou rendez-vous sur : http://127.0.0.1:5005
 
-Il y a un compte admin existant de base :
-Nom d'utilisateur : admin
-Mot de passe : Admin2021
-
 PS : Bonne visite !
