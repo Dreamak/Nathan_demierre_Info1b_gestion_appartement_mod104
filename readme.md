@@ -4,7 +4,7 @@ Installer PyCharm 2020.3.3 et Python 3.9
 
 N'oublier pas de lancer votre MAMP, UwAmp...
 
-Une fois que vous avez fait ceci faites un run sur le ficher "1_ImportationDumpSql" qui se trouve dans le dossier "setting".
+Une fois que vous avez fait ceci faites un run sur le ficher "1_ImportationDumpSql" qui se trouve dans le dossier "zzzdemo".
 
 Si il y une/des erreur(s) aller dans le fichier ".env" qui se trouve à la racine et contrôlez les indication de connexion pour la bd .
 
